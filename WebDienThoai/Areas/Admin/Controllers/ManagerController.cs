@@ -19,12 +19,13 @@ namespace WebDienThoai.Controllers
     {
         
         private readonly ApplicationDbContext _db;
-        private readonly IHostingEnvironment _hosting;
-        public ManagerController(ApplicationDbContext db, IHostingEnvironment hosting)
+        private readonly IWebHostEnvironment _hosting; // Thay đổi ở đây
+        public ManagerController(ApplicationDbContext db, IWebHostEnvironment hosting) // Thay đổi ở đây
         {
             _db = db;
             _hosting = hosting;
         }
+
         //Hiển thị danh sách sản phẩm
         public IActionResult Index(int? page, string textsearch = "")
         {

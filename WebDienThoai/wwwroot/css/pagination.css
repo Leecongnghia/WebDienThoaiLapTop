@@ -1,0 +1,41 @@
+﻿.store-filter {
+    margin-top: 90px; 
+}
+
+.pagination {
+    margin: 0; 
+}
+
+    .pagination .page-item {
+        margin: 0 5px; 
+    }
+
+    .pagination .page-link {
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #ff4d4d; 
+        color: white; 
+        border: 1px solid #000; 
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+        .pagination .page-link:hover {
+            background-color: #c63939; /* Màu đỏ đậm khi hover */
+            border-color: #000; /* Đường viền màu đỏ đậm khi hover */
+        }
+
+    .pagination .page-item.active .page-link {
+        background-color: #e63939; /* Màu đỏ đậm cho trang đang hoạt động */
+        border: 2px solid #000; /* Đường viền đen cho trang đang hoạt động */
+    }
+
+    .pagination .page-item.disabled .page-link {
+        background-color: #ccc; /* Màu nền cho trang bị vô hiệu hóa */
+        color: #666; /* Màu chữ cho trang bị vô hiệu hóa */
+        cursor: not-allowed; /* Con trỏ không cho phép */
+    }
+
+    .pagination .page-link:focus {
+        outline: none; /* Tắt outline mặc định */
+        box-shadow: 0 0 5px rgba(255, 77, 77, 0.5); /* Hiệu ứng bóng khi focus */
+    }
